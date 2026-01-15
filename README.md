@@ -2,6 +2,10 @@
 
 An academic website examining the global crisis of AI development and deployment through three distinct theoretical lenses.
 
+## Live Demo
+
+[View the site](https://d30mbz4ykavpgv.cloudfront.net) — Hosted on AWS S3 + CloudFront
+
 ## Overview
 
 This project presents an analysis of artificial intelligence as a contemporary global issue, exploring its implications through:
