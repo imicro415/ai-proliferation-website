@@ -1,0 +1,267 @@
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    border: 5px groove black;
+    font-family: "Libre Baskerville", Georgia, serif;
+}
+
+.header, .top-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0f172a;
+    padding: 30px 50px 100px;
+}
+
+.header {
+    background-color: #111827;
+    color: #e5e7eb;
+    font-size: 18px;
+    padding-bottom: 50px;
+    align-items: center;
+}
+
+.header ul {
+    display: flex;
+    color: #3b82f6;
+    gap: 0 25px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.top-container {
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 16px;
+}
+.title {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    gap: 10px 16px;
+    flex: 1;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
+    margin: 0;
+}
+
+#slot-intro {
+    font-size: 18px;
+    color: #E5E7EB;
+    font-weight: 450;
+    margin: 0;
+}
+
+.image-box-1,
+.image-box-2 {
+    display: flex;
+    background: none;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    flex: 1;
+}
+
+.image-box-1 {
+    max-width: 500px;
+    overflow: hidden;
+}
+
+.image-box-1 figure,
+.image-box-2 figure {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.image-box-2 figure {
+    max-width: 700px;
+}
+
+.image-box-1 img,
+.image-box-2 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+.section-divider-1, .section-divider-2 {
+    width: 100%;
+    height: 1px;
+    opacity: 0.7;
+    margin: 0;
+}
+.section-divider-1 {
+    background-color: #111827;
+}
+.section-divider-2 {
+    background-color: #e5e7eb;
+}
+.middle-top {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9fafb;
+    align-items: center;
+    padding: 25px 100px 0;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+    margin: 0;
+}
+
+.middle-bottom {
+    display: flex;
+    padding: 10px 100px 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9fafb;
+}
+
+.bottom-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c2410c;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    background-color: #c2410c;
+    color: black;
+    font-size: 14px;
+}
+
+.bottom-container > ul {
+    display: flex;
+    color: #3b82f6;
+    list-style: none;
+    gap: 100px;
+}
+
+#slot-body {
+    color: black;
+    font-size: 18px;
+    font-weight: 450;
+    white-space: pre-line;
+}
+
+/* Tablet and smaller */
+@media (max-width: 900px) {
+    .header, .top-container {
+        padding: 20px 30px 60px;
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .header ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    .top-container {
+        flex-direction: column;
+    }
+
+    .title {
+        max-width: 100%;
+    }
+
+    .image-box-1 {
+        max-width: 100%;
+        min-width: 280px;
+    }
+
+    .middle-top {
+        padding: 25px 30px 0;
+    }
+
+    .middle-bottom {
+        padding: 10px 30px 60px;
+    }
+
+    .bottom-container > ul {
+        gap: 40px;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    #slot-intro,
+    #slot-body {
+        font-size: 16px;
+    }
+
+    .header, .top-container {
+        padding: 15px 20px 40px;
+    }
+
+    .header {
+        font-size: 16px;
+    }
+
+    .header ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .image-box-1,
+    .image-box-2 {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .image-box-1 figure,
+    .image-box-2 figure {
+        max-width: 100%;
+    }
+
+    .image-box-1 img,
+    .image-box-2 img {
+        min-height: 200px;
+        object-fit: cover;
+    }
+
+    .middle-top {
+        padding: 20px 20px 0;
+    }
+
+    .middle-bottom {
+        padding: 10px 20px 40px;
+    }
+
+    .bottom-container > ul {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 0;
+    }
+}
+
