@@ -1,7 +1,7 @@
 import { renderPage } from "../renderPage.js";
 
 renderPage({
-    title: "Artifical Intelligence as a Crisis",
+    title: "Artificial Intelligence as a Crisis",
     sectionHeading: "A Brief History of AI",
     introTxt: "../../content/home/intro.txt",
     bodyTxt: "../../content/home/history.txt",
